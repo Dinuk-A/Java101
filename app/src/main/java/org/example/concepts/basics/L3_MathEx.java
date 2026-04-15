@@ -85,6 +85,25 @@ public class MathEx {
         // casting a double to int,,, random provides a double
         int randomNum = (int)(Math.random() * 101);
 
+        //special rules ✅
+        // byte calculations' end results are ints
+        //apply for all arithmatics , + - * / %
+        byte b1= 10;
+        byte b2= 50;
+        // byte result = b1 + b2 >>> this gives a compile error
+        int results =  b1 + b2;
+
+        //same for short
+
+        //Java always promotes to the larger/higher type in the expression., floot is int
+        /*
+        byte  + byte  = int
+        short + short = int
+        int   + int   = int
+        int   + long  = long
+        long  + float = float
+        float + double = double
+        */
     }
 
 }

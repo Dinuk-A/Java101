@@ -15,9 +15,17 @@ public class WrapperEx {
 
     // Unboxing: Converting a wrapper class back to its primitive type
     public static void unboxingExample() {
+
+        //to the below line, valueOf() is not necessary, its must required only when converting a String to an Integer 
+        //ex: Integer parsed = Integer.valueOf("42");
         Integer wrapperNum = Integer.valueOf(10);
+        
         int num = wrapperNum; // Unboxing: Integer -> int
-        System.out.println("Unboxing Example: " + num); // Output: 10
+        System.out.println("Unboxing Example 1: " + num); // Output: 10
+
+        Integer wrappedNumTwo = 2557;
+        int unboxedNum = wrappedNumTwo.intValue();
+        System.out.println("Unboxing Example 2: " + unboxedNum); // Output: 2557
     }
 
     // Parsing: Converting a String to a primitive using wrapper classes
@@ -79,7 +87,8 @@ public class WrapperEx {
     public static void compareToExample() {
         Integer num1 = 10;
         Integer num2 = 20;
-        System.out.println("CompareTo Example: " + num1.compareTo(num2)); // Output: -1 (num1 is smaller than num2)
+        System.out.println("CompareTo Example: " + num1.compareTo(num2)); // Output: -1 (num1 is smaller than num2...num1 is the one being compared to num2)
+        //if they are similar , output = 0, if one is greater than the other, output = 1
     }
 
     // Demonstrating the use of wrapper class constants
@@ -104,6 +113,7 @@ public class WrapperEx {
         // Calculating total price (item price * quantity)
         Integer totalPriceItem1 = item1Price * item1Quantity; // Unboxing and calculation
         Integer totalPriceItem2 = item2Price * item2Quantity; // Unboxing and calculation
+        //in above, java is silently unboxing from Integer to int in order to perform the multiplication, and then autoboxing the result back to Integer
 
         // Sum of total price
         Integer grandTotal = totalPriceItem1 + totalPriceItem2; // Unboxing and addition
