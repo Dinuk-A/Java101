@@ -2,7 +2,7 @@ package org.example.concepts.basics;
 
 import java.util.Scanner;
 
-public class InnOutEx {
+public class L5_InnOutEx {
 
     // 1
     public static void inputsAddMethod() {

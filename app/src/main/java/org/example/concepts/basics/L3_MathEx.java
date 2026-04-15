@@ -1,6 +1,6 @@
 package org.example.concepts.basics;
 
-public class MathEx {
+public class L3_MathEx {
 
     public static void mathExMethod() {
         

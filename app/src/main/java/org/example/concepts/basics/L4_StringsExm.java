@@ -4,7 +4,7 @@ package org.example.concepts.basics;
  * in App >>> StringsExm.stringsExMMethod();
  */
 
-public class StringsExm {
+public class L4_StringsExm {
 
     // since this is static, this can be called in main, without creating an
     // instance of this class

@@ -4,7 +4,7 @@ package org.example.concepts.basics;
  * In Java, wrappers are special classes that encapsulate primitive data types into objects. This allows primitives (which are not objects) to be used in scenarios where objects are required, such as in collections (e.g., ArrayList) or when we need to pass a value as an object
  */
 
-public class WrapperEx {
+public class L2_WrapperEx {
 
     // Autoboxing: Automatically converting a primitive type to its wrapper class
     public static void autoboxingExample() {
