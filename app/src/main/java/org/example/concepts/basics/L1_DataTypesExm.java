@@ -1,6 +1,6 @@
 package org.example.concepts.basics;
 
-public class DataTypesExm {
+public class L1_DataTypesExm {
 
     // Primitive types
     byte age = 27;

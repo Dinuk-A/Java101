@@ -64,10 +64,16 @@ public class StringsExm {
         str.getChars(7, 12, destinationArray, 3);
 
         // Print the resulting character array
-        System.out.println(destinationArray); // Output: ___Java___
+        System.out.println(destinationArray);
+        // Output: ___Java___
+        // Underscores represents empty spaces , not the actual output
 
         // ================================ Example for additional String methods
         // =====================
+
+        // charAt()
+        char firstChar = txt.charAt(0); // Gets the character at index 0
+        System.out.println(firstChar); // Output: 'T'
 
         // intern()
         String s1 = new String("Hello");
@@ -104,7 +110,11 @@ public class StringsExm {
 
         // valueOf()
         int num = 123;
-        String numStr = String.valueOf(num); // Converts int to String
+        String numStr = String.valueOf(num); // Converts int to String, can be used for other types as well
         System.out.println(numStr); // Output: 123
+
+        char ch = 'A';
+        String charStr = String.valueOf(ch); // Converts char to String
+
     }
 }
