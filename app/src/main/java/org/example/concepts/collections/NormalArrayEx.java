@@ -11,6 +11,7 @@ public class NormalArrayEx {
     public static void createArray() {
 
         // array with predefined values
+        @SuppressWarnings("unused")
         int[] nums = { 10, 25, 356, 156 };
 
         // create an empty array and assign values later
