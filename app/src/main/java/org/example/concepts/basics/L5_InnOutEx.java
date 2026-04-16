@@ -22,13 +22,19 @@ public class L5_InnOutEx {
 
     // 2
     public static void basicDataTypeInputs() {
+
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter a double:");
         double doubleVal = scanner.nextDouble();
+
         System.out.println("Enter a float:");
         float floatVal = scanner.nextFloat();
+
         System.out.println("Enter a boolean:");
+        // only accepts 'true' or 'false' (case insensitive)
         boolean boolVal = scanner.nextBoolean();
+
         System.out.println("Double: " + doubleVal + ", Float: " + floatVal + ", Boolean: " + boolVal);
         scanner.close();
     }
@@ -84,7 +90,7 @@ public class L5_InnOutEx {
 
         // Use nextInt() to read an integer input
         int number = scanner.nextInt();
-        // At this point, nextInt() has read the integer but left the newline character
+        // At this point, nextInt() has read the integer but left the newline character that caused by pressing Enter key 
         // ('\n') in the input buffer
 
         // Use an extra nextLine() to consume the leftover newline character
@@ -103,5 +109,8 @@ public class L5_InnOutEx {
         // Close the Scanner to release system resources
         scanner.close();
     }
+
+    // we cant limit the character length for user to enter, scanner will consume
+    // whatever the user type, we can validate it afterwards
 
 }

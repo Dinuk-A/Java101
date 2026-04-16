@@ -2,7 +2,7 @@ package org.example.concepts.basics;
 
 import java.util.ArrayList;  // For ArrayList demonstration
 
-public class ArraysEX {
+public class L6_ArraysEX {
 
     // Method to define arrays in different ways
     public static void defineArrays() {
@@ -146,5 +146,19 @@ public class ArraysEX {
             System.out.println();
         }
     }
+
+    //setAll()
+    public static void setAll() {
+        int[] array = new int[5];
+        java.util.Arrays.setAll(array, i -> i * 2);  // Set each element to its index multiplied by 2
+        
+        System.out.println("Array after setAll: ");
+        for (int num : array) {
+            System.out.print(num + " ");
+            //OUTPUT = 0 2 4 6 8
+        }
+        System.out.println();
+    }
+
 
 }
