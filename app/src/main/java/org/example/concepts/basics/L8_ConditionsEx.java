@@ -1,6 +1,6 @@
 package org.example.concepts.basics;
 
-public class ConditionsEx {
+public class L8_ConditionsEx {
 
     public static void IfElsemethod() {
         int myNum = 10;
