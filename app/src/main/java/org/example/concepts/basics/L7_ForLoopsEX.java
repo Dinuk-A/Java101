@@ -1,6 +1,6 @@
 package org.example.concepts.basics;
 
-public class ForLoopsEX {
+public class L7_ForLoopsEX {
 
     public static void fLMethod() {
         for (int i = 0; i < 5; i++) {
@@ -23,7 +23,7 @@ public class ForLoopsEX {
     public static void forEachEx() {
         String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
         for (String i : cars) {
-            System.out.println(i);
+            System.out.println(i + ", ");
         }
 
     }
