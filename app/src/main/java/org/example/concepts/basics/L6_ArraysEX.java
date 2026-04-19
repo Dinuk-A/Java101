@@ -1,11 +1,18 @@
 package org.example.concepts.basics;
 
 import java.util.ArrayList;  // For ArrayList demonstration
+import java.util.Arrays;
 
 public class L6_ArraysEX {
 
+    //use following to print an array as it is
+    //System.out.println(java.util.Arrays.toString(letters));
+
+    //for multidimensional arrays > System.out.println(Arrays.deepToString(arr))
+
     // Method to define arrays in different ways
     public static void defineArrays() {
+
         // 1. Array with predefined values
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println("Predefined Array: ");
@@ -33,6 +40,13 @@ public class L6_ArraysEX {
             System.out.print(num + " ");
         }
         System.out.println();
+
+        //above method 3 is only filling the array with same value, use for loops to fill those with a custom pattern
+                for(int i =0; i<filledArray.length; i++){
+            filledArray[i] = i * 3; 
+            //3 6 9 12 ...
+        }
+        //or use setAll() ..below
     }
 
     // Method to get elements from an array (access by index)
@@ -120,6 +134,7 @@ public class L6_ArraysEX {
 
     // Method to sort an array
     public static void sortArray() {
+        // 1 numeric
         int[] unsortedArray = {50, 20, 10, 40, 30};
         java.util.Arrays.sort(unsortedArray);
         
@@ -128,6 +143,14 @@ public class L6_ArraysEX {
             System.out.print(num + " ");
         }
         System.out.println();
+
+        //alphabet
+        String[] unsortedFruits = {"mango","cherry","apple","banana","papaya"};
+        Arrays.sort(unsortedFruits);
+        System.out.println(Arrays.toString(unsortedFruits));
+
+        //the default sorting is case sensitive, Uppercase ones comes first..use following to changr that
+        // Arrays.sort(words, String.CASE_INSENSITIVE_ORDER);
     }
 
     // Method to demonstrate multi-dimensional arrays
