@@ -7,3 +7,13 @@ build.gradle
 syllabus.txt
 syllabus2.txt
 .vscode/
+app/bin/
+app/build/
+
+# also recommended
+*.class
+
+bin/
+build/
+out/
+target/

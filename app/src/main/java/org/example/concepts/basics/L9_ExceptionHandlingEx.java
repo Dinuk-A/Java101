@@ -1,6 +1,6 @@
 package org.example.concepts.basics;
 
-public class ExceptionHandlingEx {
+public class L9_ExceptionHandlingEx {
 
     // Lesson 1: Basic try-catch block
     public static void basicTryCatch() {
@@ -42,6 +42,7 @@ public class ExceptionHandlingEx {
     }
 
     // Lesson 4: Throwing custom exceptions
+    // InvalidAgeException is defined bottom of the page
     public static void throwCustomException() throws InvalidAgeException {
         int age = -5;
         if (age < 0) {
