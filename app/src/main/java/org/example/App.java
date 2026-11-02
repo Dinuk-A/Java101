@@ -1,14 +1,18 @@
 package org.example;
 
-import org.example.challenges.ReverseStrings;
+import org.example.challenges.StringChecks;
 
 public class App {
 
     // MAIN METHOD
     public static void main(String[] args) {
 
+        System.out.println("==================================");
+
         // ############### TESTING PRACTICLES GO BELOW ###############
-        ReverseStrings.revStrWithConcat("dinukaaa");
+
+        StringChecks.checkPalindrome("racecar");
+        StringChecks.checkPalindrome("ilovecats");
 
         System.out.println("==================================");
 
