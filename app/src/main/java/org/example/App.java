@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.challenges.StringChecks;
+import org.example.challenges.IntChecks;
 
 public class App {
 
@@ -11,8 +11,8 @@ public class App {
 
         // ############### TESTING PRACTICLES GO BELOW ###############
 
-        StringChecks.checkPalindrome("racecar");
-        StringChecks.checkPalindrome("ilovecats");
+        int[] nums = { -45, 8, -999, 100, -45, -1, 69, 475 };
+        IntChecks.findMinNOrmally(nums);
 
         System.out.println("==================================");
 
