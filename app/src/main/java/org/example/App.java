@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.challenges.IntChecks;
+import org.example.challenges.StringChecks;
 
 public class App {
 
@@ -10,10 +11,7 @@ public class App {
         System.out.println("==================================");
 
         // ############### TESTING PRACTICLES GO BELOW ###############
-        
-        
-         int[] nums = {11, 12, 13, 15, 16};
-         IntChecks.findMissingNumInRange(nums);
+        StringChecks.findFirstUnqChar("aabbccddee");
          
 
         System.out.println("==================================");
