@@ -119,4 +119,36 @@ public class IntChecks {
 
         System.out.println("Missing number: " + missingNum);
     }
+
+    // two sum
+    // int[] nums = {2, 7, 11, 15}; int target = 22;
+    public static void twoSumProblem(int[] nums, int targetSum) {
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == targetSum) {
+                    System.out.println("Two Sum found at indexes " + i + " and " + j);
+                }
+            }
+        }
+
+    }
+
+    // calculate the sum of digits
+    // 356 = 14
+    public static void sumOfDigits(int givenDigit) {
+
+        int original = givenDigit;
+        int sum = 0;
+
+        while (givenDigit > 0) {
+            int lastDigit = givenDigit % 10;
+            sum = sum + lastDigit;
+            givenDigit = givenDigit / 10;
+        }
+
+        System.out.printf("Sum for %d is %d", original, sum);
+
+    }
+
 }

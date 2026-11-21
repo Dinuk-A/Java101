@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.challenges.CollectionsInvolved;
 import org.example.challenges.IntChecks;
 import org.example.challenges.StringChecks;
 
@@ -11,8 +12,11 @@ public class App {
         System.out.println("==================================");
 
         // ############### TESTING PRACTICLES GO BELOW ###############
-        StringChecks.countDigits("aabb7cc4dde8fe10CAT");
-         
+
+        Integer[] numbers = { 1, 2, 3, 2, 1 };
+        String[] names = { "John", "Alex", "John", "Pat" };
+        CollectionsInvolved.removeDuplicatedElementsOfArray(numbers);
+        CollectionsInvolved.removeDuplicatedElementsOfArray(names);
 
         System.out.println("==================================");
 
