@@ -10,9 +10,11 @@ public class App {
         System.out.println("==================================");
 
         // ############### TESTING PRACTICLES GO BELOW ###############
-
-        int[] nums = { -45, 8, -999, 100, -45, -1, 69, 475 };
-        IntChecks.findMinNOrmally(nums);
+        
+        
+         int[] nums = { 45, -80, 445, 1099, -45, -1, 0, 445 };
+         IntChecks.findSecMin(nums);
+         
 
         System.out.println("==================================");
 
