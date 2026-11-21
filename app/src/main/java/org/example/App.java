@@ -11,7 +11,7 @@ public class App {
         System.out.println("==================================");
 
         // ############### TESTING PRACTICLES GO BELOW ###############
-        StringChecks.findFirstUnqChar("aabbccddee");
+        StringChecks.countDigits("aabb7cc4dde8fe10CAT");
          
 
         System.out.println("==================================");

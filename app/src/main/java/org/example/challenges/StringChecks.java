@@ -102,4 +102,76 @@ public class StringChecks {
 
     }
 
+    // search a value in an array
+    // use element.equals(target) for generic types
+    public static void findValueInArr(int[] arr, int target) {
+
+        boolean isFound = false;
+
+        for (int d : arr) {
+            if (d == target) {
+                isFound = true;
+                System.out.println("Target found");
+                break;
+            }
+        }
+
+        if (!isFound) {
+            System.out.println("Target not found");
+        }
+
+    }
+
+    // count vowels in a string
+    public static void countVowels(String givenString) {
+
+        Set<Character> vowels = Set.of('a', 'e', 'i', 'o', 'u');
+        int vowelsCount = 0;
+
+        char[] strAsArr = givenString.toCharArray();
+
+        for (char c : strAsArr) {
+            if (vowels.contains(Character.toLowerCase(c))) {
+                vowelsCount++;
+            }
+        }
+
+        System.out.println(vowelsCount + " Vowels Found");
+
+    }
+
+    // count constants in a string
+    public static void countConstants(String givenString) {
+
+        Set<Character> vowels = Set.of('a', 'e', 'i', 'o', 'u');
+        int constantsCount = 0;
+
+        char[] strAsArr = givenString.toCharArray();
+
+        for (char c : strAsArr) {
+            if (Character.isLetter(c) && !vowels.contains(Character.toLowerCase(c))) {
+                constantsCount++;
+            }
+        }
+
+        System.out.println(constantsCount + " Constants Found");
+
+    }
+
+    // count digits in a string
+    public static void countDigits(String givenString) {
+
+        char[] txtArr = givenString.toCharArray();
+        int digitCount = 0;
+
+        for (char c : txtArr) {
+            if (Character.isDigit(c)) {
+                digitCount++;
+            }
+        }
+
+        System.out.println(digitCount + " Digits Found");
+
+    }
+
 }
