@@ -12,8 +12,8 @@ public class App {
         // ############### TESTING PRACTICLES GO BELOW ###############
         
         
-         int[] nums = { 45, -80, 445, 1099, -45, -1, 0, 445 };
-         IntChecks.findSecMin(nums);
+         int[] nums = {11, 12, 13, 15, 16};
+         IntChecks.findMissingNumInRange(nums);
          
 
         System.out.println("==================================");

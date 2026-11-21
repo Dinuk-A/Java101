@@ -1,5 +1,7 @@
 package org.example.challenges;
 
+import java.util.Arrays;
+
 public class IntChecks {
 
     // find Max - #1
@@ -32,14 +34,14 @@ public class IntChecks {
         int max = intArr[0];
         int sec = intArr[0];
 
-        for(int i = 0; i< intArr.length; i++){
+        for (int i = 0; i < intArr.length; i++) {
 
             int currentValue = intArr[i];
 
             if (currentValue > max) {
                 sec = max;
                 max = currentValue;
-            } else if( currentValue< max && currentValue> sec ){
+            } else if (currentValue < max && currentValue > sec) {
                 sec = currentValue;
             }
         }
@@ -71,24 +73,50 @@ public class IntChecks {
 
     }
 
+    // find sec min
     public static void findSecMin(int[] intArr) {
 
         int min = intArr[0];
         int secMin = intArr[0];
-        
+
         for (int i = 0; i < intArr.length; i++) {
-            
+
             int currentval = intArr[i];
-            
-            if(currentval<min){
+
+            if (currentval < min) {
                 secMin = min;
                 min = currentval;
-            }else if(currentval>min && currentval<secMin){
+            } else if (currentval > min && currentval < secMin) {
                 secMin = currentval;
             }
         }
 
         System.out.println(secMin);
 
+    }
+
+    // find missing number in a range
+    // (1 to 6)
+    // int[] nums = {1, 2, 3, 5, 6};
+    public static void findMissingNumInRange(int[] intArr) {
+
+        Arrays.sort(intArr);
+
+        int arrayLength = intArr.length;
+
+        int firstVal = intArr[0];
+        int lastVal = intArr[arrayLength - 1];
+        int n = lastVal - firstVal + 1;
+
+        int expectedSum = (n * (firstVal + lastVal)) / 2;
+        int actualSum = 0;
+
+        for (int i : intArr) {
+            actualSum = actualSum + i;
+        }
+
+        int missingNum = expectedSum - actualSum;
+
+        System.out.println("Missing number: " + missingNum);
     }
 }
